@@ -15,5 +15,8 @@ return {
     require'lspconfig'.lua_ls.setup({
       on_attach = on_attach,
     })
+    require'lspconfig'.pylsp.setup({
+      on_attach = on_attach,
+    })
   end
 }
