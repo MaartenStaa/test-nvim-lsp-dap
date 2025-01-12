@@ -19,5 +19,9 @@ return {
       require('dapui').open()
     end)
     vim.keymap.set('n', '<leader>dt', function() require('dapui').toggle() end)
+    vim.keymap.set('n', '<leader>dq', function()
+      require('dap').close()
+      require('dapui').close()
+    end)
   end
 }
